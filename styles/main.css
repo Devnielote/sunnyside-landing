@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Fraunces', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    padding-top: 2rem;
+}
+
+.navbar a {
+    margin-left: 2rem;
+}
+
+.navbar .menu {
+    margin-right: 2rem;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 480px;
+}
+
+.header__bg {
+    height: 100%;
+}
+
+.header__title {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.arrow-down{
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, 0);
+}
+
+.arrow-down img {
+    height: 10rem;
+}
+
+.section-1, .section-2 {
+}
+
+.transform-brand, .stand-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+}
+
+.transform-brand, .stand-out a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.transform-brand h2, p {
+    margin-bottom: 2.5rem;
+}
+
+.stand-out h2, p {
+    margin-bottom: 2.5rem;
+}
