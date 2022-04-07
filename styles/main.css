@@ -16,8 +16,9 @@ h2 {
 }
 
 p {
-    font-size: 1.6rem;
-    color: #adb5bd;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    color: #929aa3;
 }
 
 a {
@@ -91,14 +92,11 @@ header {
     height: 10rem;
 }
 
-.section-1, .section-2 {
-}
-
 .transform-brand, .stand-out {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
+    height: 450px;
     padding: 0 2rem 0 2rem;
     text-align: center;
 }
@@ -107,10 +105,75 @@ div > a {
     text-transform: uppercase;
 }
 
+
+
 .transform-brand h2, p {
     margin-bottom: 2.5rem;
 }
 
+.transform-brand a {
+    text-decoration: underline;
+    text-decoration-color: #ffee99;
+    text-decoration-thickness: .5rem;
+}
+
 .stand-out h2, p {
     margin-bottom: 2.5rem;
+}
+
+.stand-out a {
+    text-decoration: underline;
+    text-decoration-color: rgba(254, 127, 112, .4);
+    text-decoration-thickness: .5rem;
+}
+
+/* Secciones con texto dentro de la imagenes */
+
+.section-3 , .section-4 {
+    position: relative;
+
+}
+.text-over-image {
+    position: absolute;
+    bottom: 30px;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+
+.text-over-image p {
+    font-size: 1.4rem;
+}
+
+.graphic-desing h2{
+    color: rgb(53, 80, 73);
+}
+.graphic-desing p{
+    margin-top: 1rem;
+    line-height: 2.4rem;
+    color: rgb(53, 80, 73);
+}
+
+.photography h2 {
+    color: rgb(35, 73, 92);
+}
+
+.photography p {
+    margin-top: 1rem;
+    line-height: 2.4rem;
+    color: rgb(35, 73, 92);
+}
+
+/* Seccion de opinion del cliente */
+
+.section-5 {
+    padding: 8rem 3rem 8rem 3rem;
+}
+
+.testi-title {
+    margin-bottom: 5rem;
+    letter-spacing: .6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: grey;
 }
