@@ -12,10 +12,18 @@ html {
 
 h2 {
     font-size: 3rem;
+    color: #343a40;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    color: #adb5bd;
+}
+
+a {
+    text-decoration: none;
+    color: #343a40;
+    font-size: 1.6rem;
 }
 
 figure {
@@ -91,13 +99,12 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 400px;
+    padding: 0 2rem 0 2rem;
     text-align: center;
 }
 
-.transform-brand, .stand-out a {
-    color: black;
+div > a {
     text-transform: uppercase;
-    text-decoration: none;
 }
 
 .transform-brand h2, p {
