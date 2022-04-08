@@ -37,6 +37,14 @@ figure img {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 .container {
     
 }
@@ -50,12 +58,63 @@ figure img {
     padding-top: 2rem;
 }
 
-.navbar a {
+.navbar > a {
     margin-left: 2rem;
 }
 
-.navbar .menu {
+.navbar .hamburg-menu {
     margin-right: 2rem;
+    cursor: pointer;
+}
+
+#mobileMenu {
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 300px;
+    padding: 0 1rem 0 1rem;
+    font-family: 'Barlow', 'sans-serif';
+}
+
+#mobileMenu ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+}
+
+.triangle {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+-webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%); clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+}
+
+#mobileMenu ul li {
+    list-style-type: none;
+    color: #858489;
+}
+
+#mobileMenu ul li a {
+    color: #858489;
+}
+
+#mobileMenu ul li:last-child a{
+    padding: 1.5rem 3.3rem 1.5rem 3.3rem;
+    border-radius: 30px;
+    background-color: gold;
+    font-family: 'Fraunces', 'sans-serif';
+    text-transform: uppercase;
+    color: #343a40;
 }
 
 header {
@@ -103,10 +162,12 @@ div > a {
     text-transform: uppercase;
 }
 
-
-
 .transform-brand h2, p {
     margin-bottom: 2.5rem;
+}
+
+.transform-brand p {
+    font-family: 'Barlow', 'sans-serif';
 }
 
 .transform-brand a {
@@ -117,6 +178,10 @@ div > a {
 
 .stand-out h2, p {
     margin-bottom: 2.5rem;
+}
+
+.stand-out p {
+    font-family: 'Barlow', 'sans-serif';
 }
 
 .stand-out a {
@@ -148,6 +213,7 @@ div > a {
 .graphic-desing p{
     margin-top: 1rem;
     line-height: 2.4rem;
+    font-family: 'Barlow', 'sans-serif';
     color: rgb(53, 80, 73);
 }
 
@@ -158,6 +224,7 @@ div > a {
 .photography p {
     margin-top: 1rem;
     line-height: 2.4rem;
+    font-family: 'Barlow', 'sans-serif';
     color: rgb(35, 73, 92);
 }
 
@@ -183,6 +250,7 @@ div > a {
     align-items: center;
     margin-bottom: 7rem;
     text-align: center;
+    font-family: 'Barlow', 'sans-serif';
 }
 
 .client figure {
@@ -242,14 +310,20 @@ footer {
 .footer__navbar ul{
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem 0 2rem;
 }
 
 .footer__navbar ul li{
     list-style-type: none;
 }
 
+.footer__navbar ul li a {
+    font-family: 'Barlow', 'sans-serif';
+    color: #4A8E7F;
+}
+
 .footer__media {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 3rem;
 }
@@ -257,8 +331,21 @@ footer {
 .footer__media ul {
     display: flex;
     justify-content: space-evenly;
+    padding: 0 2rem 0 2rem;
 }
 
 .footer__media ul li {
     list-style-type: none;
+}
+
+footer .attribution {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4A8E7F;
+}
+
+footer .attribution a {
+    font-family: 'Barlow', 'sans-serif';
+    color: #2E7766;
 }
