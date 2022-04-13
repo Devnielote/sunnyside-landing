@@ -53,25 +53,56 @@ figure img {
 }
 
 .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 10;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .navbar > a {
     margin-left: 2rem;
 }
-
-.navbar .desktop-menu {
-    display: none;
+.navbar > a img {
+    width: 15rem;
 }
 
 .navbar .hamburg-menu {
     margin-right: 2rem;
     cursor: pointer;
+    display: none;
+}
+
+.navbar .desktop-menu {
+    display: block;
+}
+
+
+.navbar .desktop-menu ul {
+    display: flex;
+}
+
+.navbar .desktop-menu ul li {
+    list-style-type: none;
+}
+
+.navbar .desktop-menu ul li a {
+    margin-left: 4rem;
+    font-family: 'Barlow', 'sans-serif';
+    color: white;
+}
+
+.navbar .desktop-menu ul li:last-child > a {
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Fraunces', 'sans-serif';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #343a40;
+    border-radius: 10rem;
+}
+
+.navbar .desktop-menu ul li:last-child > a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255,.3);
 }
 
 #mobileMenu {
@@ -128,8 +159,8 @@ header {
     position: relative;
     width: 100%;
     min-width: 320px;
-    height: 600px;
-    background-image: url('../images/mobile/image-header.jpg');
+    height: 100vh;
+    background-image: url('../images/desktop/image-header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,40 +169,46 @@ header {
 .header__title {
     position: absolute;
     left: 50%;
-    bottom: 50%;
+    bottom: 65%;
     transform: translate(-50%, 0);
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
 .arrow-down{
     position: absolute;
     left: 50%;
-    bottom: 25%;
+    bottom: 40%;
     transform: translate(-50%, 0);
 }
 
 .arrow-down img {
-    height: 15rem;
+    height: 10rem;
 }
 
 .section-1, .section-2 {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction: row;
+}
+
+.section-1 {
+    flex-direction: row-reverse;
 }
 
 .transform-brand, .stand-out {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 50%;
     height: 450px;
     padding: 0 2rem 0 2rem;
     text-align: center;
 }
 
+.egg, .pink-cup {
+    width: 50%;
+}
 
 div > a {
     text-transform: uppercase;
@@ -209,25 +246,21 @@ div > a {
 
 .section-3 , .section-4 {
     position: relative;
-    width: 100%;
+
 }
 
-.mandarine, .berries {
-    height: 550px;
+
+.berries-mandarine {
+    display: flex;
 }
 
 .berries {
-    background-image: url('../images/mobile/image-graphic-design.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/desktop/image-graphic-design.jpg');
 }
 
 .mandarine {
-    background-image: url('../images/mobile/image-photography.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/desktop/image-photography.jpg');
+   
 }
 
 .text-over-image {
@@ -238,8 +271,7 @@ div > a {
 }
 
 .text-over-image p {
-    width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .graphic-desing h2{
@@ -266,16 +298,7 @@ div > a {
 /* Seccion de opinion del cliente */
 
 .section-5 {
-    display: flex;
-    flex-direction: column;
     padding: 8rem 3rem 8rem 3rem;
-}
-
-.clients-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .testi-title {
@@ -292,10 +315,6 @@ div > a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-width: 260px;
-    max-width: 320px;
-    margin: 0 auto;
     margin-bottom: 7rem;
     text-align: center;
     font-family: 'Barlow', 'sans-serif';
@@ -341,13 +360,6 @@ footer {
     background-color: #90D4C5;
 }
 
-.footer-container {
-    width: 100%;
-    min-width: 320px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 .footer__title figure {
     display: flex;
     justify-content: center;
@@ -377,12 +389,6 @@ footer {
     color: #4A8E7F;
 }
 
-.footer__navbar ul li a:hover {
-    font-family: 'Barlow', 'sans-serif';
-    color: white;
-}
-
-
 .footer__media {
     width: 100%;
     margin: 0 auto;
@@ -397,10 +403,6 @@ footer {
 
 .footer__media ul li {
     list-style-type: none;
-}
-
-.footer__media ul li a img:hover {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(2%) hue-rotate(218deg) brightness(105%) contrast(100%);
 }
 
 footer .attribution {

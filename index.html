@@ -12,11 +12,13 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <!-- <link rel="stylesheet" href="styles/tablet.css" media='(min-width: 760px )'> -->
+    <link rel="stylesheet" href="styles/desktop.css" media='(min-width: 669px )'>
   </head>
   <body>
     <div class="container">
       <div class="navbar">
-        <div id="mobileMenu" class="visible">
+        <div id="mobileMenu" class="hidden">
           <ul>
             <div class="triangle">
             </div>
@@ -40,6 +42,22 @@
         <div class="hamburg-menu" id="menuBtn">
           <img src="images/icon-hamburger.svg" alt="" />
         </div>
+        <div class="desktop-menu">
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Services</a>
+            </li>
+            <li>
+              <a href="">Projects</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <header>
         <div class="header__title">
@@ -47,11 +65,6 @@
         </div>
         <div class="arrow-down">
           <img src="images/icon-arrow-down.svg" alt="" />
-        </div>
-        <div class="header__bg">
-          <figure>
-            <img src="images/mobile/image-header.jpg" alt="" />
-          </figure>
         </div>
       </header>
       <div class="section-1">
@@ -86,75 +99,74 @@
           <a href="">Learn more</a>
         </div>
       </div>
-      <div class="section-3">
-        <div class="berries">
-          <figure>
-            <img src="images/mobile/image-graphic-design.jpg" alt="" />
-          </figure>
-          <div class="graphic-desing text-over-image">
-            <h2>Graphic Design</h2>
-            <p>
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients’
-              attention.
-            </p>
+      <div class="berries-mandarine">
+        <div class="section-3">
+          <div class="berries">
+            <div class="graphic-desing text-over-image">
+              <h2>Graphic Design</h2>
+              <p>
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="section-4">
-        <div class="mandarine">
-          <figure>
-            <img src="images/mobile/image-photography.jpg" alt="" />
-          </figure>
-          <div class="photography text-over-image">
-            <h2>Photography</h2>
-            <p>
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
+        <div class="section-4">
+          <div class="mandarine">
+            <div class="photography text-over-image">
+              <h2>Photography</h2>
+              <p>
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="section-5">
         <div class="testi-title">Client testimonials</div>
-        <div class="client">
-          <figure>
-            <img src="images/image-emily.jpg" alt="" />
-          </figure>
-          <div class="client__info">
-            <p>
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
-            <p>Emily R.</p>
-            <span>Marketing Director</span>
+        <div class="clients-container">
+
+          <div class="client">
+            <figure>
+              <img src="images/image-emily.jpg" alt="" />
+            </figure>
+            <div class="client__info">
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure our
+                needs were met and deadlines were always hit.
+              </p>
+              <p>Emily R.</p>
+              <span>Marketing Director</span>
+            </div>
           </div>
-        </div>
-        <div class="client">
-          <figure>
-            <img src="images/image-thomas.jpg" alt="" />
-          </figure>
-          <div class="client__info">
-            <p>
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
-            <p>Thomas R.</p>
-            <span>Chief Operation Officer</span>
+          <div class="client">
+            <figure>
+              <img src="images/image-thomas.jpg" alt="" />
+            </figure>
+            <div class="client__info">
+              <p>
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <p>Thomas R.</p>
+              <span>Chief Operation Officer</span>
+            </div>
           </div>
-        </div>
-        <div class="client">
-          <figure>
-            <img src="images/image-jennie.jpg" alt="" />
-          </figure>
-          <div class="client__info">
-            <p>
-              Incredible end result! Our sales increased over 400% when we worked
-              with Sunnyside. Highly recommended!
-            </p>
-            <p>Jennie F.</p>
-            <span>Business Owner</span>
-          </div> 
+          <div class="client">
+            <figure>
+              <img src="images/image-jennie.jpg" alt="" />
+            </figure>
+            <div class="client__info">
+              <p>
+                Incredible end result! Our sales increased over 400% when we worked
+                with Sunnyside. Highly recommended!
+              </p>
+              <p>Jennie F.</p>
+              <span>Business Owner</span>
+            </div> 
+          </div>
         </div>
       </div>
       <div class="section-6">
@@ -180,37 +192,40 @@
         </div>
       </div>
     <footer>
-      <div class="footer__title">
-        <figure><img src="images/logo_copy.svg" alt="" /></figure>
-      </div>
-      <div class="footer__navbar">
-        <ul>
-           <li> <a href="">About</a> </li>
-           <li> <a href="">Services</a> </li>
-           <li> <a href="">Project</a> </li>
-        </ul>
-      </div>
-      <div class="footer__media">
-        <ul>
-          <li>
-            <a href=""><img src="images/icon-facebook.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="images/icon-instagram.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="images/icon-twitter.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href=""><img src="images/icon-pinterest.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">@devnielote</a>.
+      <div class="footer-container">
+
+        <div class="footer__title">
+          <figure><img src="images/logo_copy.svg" alt="" /></figure>
+        </div>
+        <div class="footer__navbar">
+          <ul>
+             <li> <a href="">About</a> </li>
+             <li> <a href="">Services</a> </li>
+             <li> <a href="">Project</a> </li>
+          </ul>
+        </div>
+        <div class="footer__media">
+          <ul>
+            <li>
+              <a href=""><img class="media-icon" src="images/icon-facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img class="media-icon" src="images/icon-instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img class="media-icon" src="images/icon-twitter.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img class="media-icon" src="images/icon-pinterest.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/Devnielote">@devnielote</a>.
+        </div>
       </div>
     </footer>
     <script src="./src/index.js"></script>
