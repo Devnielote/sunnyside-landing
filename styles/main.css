@@ -57,6 +57,7 @@ figure img {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 1536px;
     z-index: 10;
     padding-top: 2rem;
 }
